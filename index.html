@@ -1,0 +1,92 @@
+<!--Este desafío consiste en llenar dinámicamente la información de una tabla a partir de datos ingresados por el usuario con el método prompt. Por lo cual se deberá imprimir y calcular las notas finales de un estudiante de programación web.
+Tal como se muestra en la imagen, se debe presentar en la tabla las notas de los ramos por así como los promedios de los mismos .-->
+
+<!--1. De forma dinámica, el sitio debe solicitar al usuario ingresar las notas de los 3 ramos (3 Puntos).-->
+
+<!--2. El sistema debe calcular los promedios e imprimirlos en las casillas correspondientes (4 Puntos).-->
+
+<!--3. La ventana de diálogo, al solicitar las notas, debe indicar qué nota se está ingresando y el ramo al que corresponde (3 Puntos)-->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas finales 📓</title>
+    <!--CDN de Bootstrap para los estilos-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--ENCABEZADO-->
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="h1">Notas Finales</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <strong>Nombre:</strong> Jorge Castillo Peña
+            <br />
+            <strong>Carrera:</strong> FullStack Python G3
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--Tabla-->
+    <div id="tabla" class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Ramo</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+                <th scope="col">Nota 3</th>
+                <th scope="col">Promedio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">HTML</th>
+                <td id="html1">-</td>
+                <td id="html2">-</td>
+                <td id="html3">-</td>
+                <td id="htmlPromedio">-</td>
+              </tr>
+              <tr>
+                <th scope="row">CSS</th>
+                <td id="css1">-</td>
+                <td id="css2">-</td>
+                <td id="css3">-</td>
+                <td id="cssPromedio">-</td>
+              </tr>
+              <tr>
+                <th scope="row">JavaScript</th>
+                <td id="javascript1">-</td>
+                <td id="javascript2">-</td>
+                <td id="javascript3">-</td>
+                <td id="javascriptPromedio">-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--CDN de Bootstrap para el JavaScript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
